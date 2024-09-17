@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveSmart Renatls</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <nav>
+     <div class="nav_header">
+        <div class="nav_logo">
+          <a href="#">DriveSmart Rentals</a>
+        </div>
+        <div class="nav_menu_btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav_links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Book">Book</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Ride">Ride</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav_links_btn">
+          <button class="btn">Sign Up</button>
+        </li>
+        <li class="nav_links_btn">
+          <button class="btn">Sign In</button>
+        </li>
+      </ul>
+      <div class="nav_btns">
+        <button class="btn btn_primary">Sign Up</button>
+        <button class="btn btn_secondary">Sign In</button>
+      </div>
+    </nav>
+    <div class="section_container header_container" id="home">
+        <div class="header_image">
+          <img src="assets/Header.png" alt="header" />
+        </div>
+        <div class="header_content">
+          <h1>Rent The Best Quality Car's With Us</h1>
+          <p> 
+            With competitive rates, flexible rental options, and exceptional customer service, we make it easy for you to get on the road with confidence. Trust DriveSmart Rentals for reliability, convenience, and a driving experience that exceeds expectations.
+          </p>
+          <div class="header_links">
+                <button class="btn btn-primary" type="button">Book Now!</button>
+          </div>
+        </div>
+      </div>
+    </header>  
+
+    <section class="section_container steps_container" id="Services">
+      <h4 class="section_subheader">Introduction</h4>
+      <h2 class="section_header">Providing Reliable Car Rentals.</h2>
+      <div class="steps_grid">
+        <div class="steps_card">
+          <span><i class="ri-customer-service-2-line"></i></span>
+          <h4>24/7 Customer Support</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora deleniti ea in quae.
+          </p>
+        </div>
+        <div class="steps_card">
+          <span><i class="ri-hand-coin-line"></i></span>
+          <h4>Best Competitive Prices</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora deleniti ea in quae.
+          </p>
+        </div>
+        <div class="steps_card">
+          <span><i class="ri-pin-distance-fill"></i></span>
+          <h4>Many Pickup Location</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora deleniti ea in quae.
+          </p>
+        </div>
+        <div class="steps_card">
+          <span><i class="ri-roadster-line"></i></span>
+          <h4>Wide Range of Vehicles</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora deleniti ea in quae.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="main_form" id="Book">
+      <div class="car_info">
+        <div class="header_content">
+          <h1>20% OFF FOR ONLINE BOOKING</h1>
+        </div>
+        <div class="header_image">
+          <img src="./assets/Booking.png" alt="Car Image">
+        </div>
+      </div>
+  
+      <div class="booking_form">
+          <h3>Pick Up & Return</h3>
+  
+          <div class="form_group">
+              <label for="pickup-location">Pick Up Location</label>
+              <input type="text" id="pickup-location" placeholder="Hollywood">
+          </div>
+          <div class="form_group">
+              <label><input type="checkbox" id="same-location"> Return to the same location</label>
+          </div>
+          <div class="form_group">
+              <label for="pickup-date">Pick Up Date</label>
+              <input type="datetime-local" id="pickup-date">
+          </div>
+          <div class="form_group">
+              <label for="return-date">Return Date</label>
+              <input type="datetime-local" id="return-date">
+          </div>
+          <button class="submit_btn" onclick="findVehicle()">Find a Vehicle</button>
+       </div>
+     </div>
+
+  <section class="rental-collection">
+    <div class="header_content">
+      <h2>Best car rentals from top suppliers<h2>
+      <p>Our suppliers provide both automatic and manual transmission vehicles. Availability may vary depending on the supplier and location where you rent the vehicle.<p>
+    </div>
+      
+      <div class="cars" id="Ride">
+          <!-- Economy Car -->
+          <div class="header_image">
+          <div class="car-card">
+            <div class="header_content">
+              <img src="./assets/car-1.png" alt="Economy Car">
+              <h3>Economy</h3>
+              <p><span class="info">People:</span> 4 &nbsp; <span class="info"></span><i class="ri-group-line"></i></p>
+                <p><span class="info">5.3km /</span> 1-litre &nbsp; <span class="info"><i class="ri-speed-up-line"></i></p>
+                <p><span class="info">Gasoline</span> &nbsp; <span class="info"><i class="ri-flashlight-line"></i></p>
+                <p><span class="info">Automatic</span> &nbsp; <span class="info"></span><i class="ri-cpu-line"></i></p>
+              <p>Quite popular with budget travelers visiting the US. Economy cars are fuel-efficient and low-cost rental solutions.</p>
+              <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+      </div> 
+
+          <!-- Luxury Car -->
+          <div class="car-card">
+            <div class="header_image">
+            <div class="header_content">
+              <img src="assets/car-2.png" alt="Luxury Car">
+              <h3>Luxury</h3>
+              <p><span class="info">People:</span> 5 &nbsp; <span class="info"></span><i class="ri-group-line"></i></p>
+                <p><span class="info">5.3km /</span> 1-litre &nbsp; <span class="info"><i class="ri-speed-up-line"></i></p>
+                <p><span class="info">Gasoline</span> &nbsp; <span class="info"><i class="ri-flashlight-line"></i></p>
+                <p><span class="info">Automatic</span> &nbsp; <span class="info"></span><i class="ri-cpu-line"></i></p>
+              <p>Customers rent luxury cars for vacations and special occasions like anniversaries, adding comfort and style to their trip.</p>
+              <a href="#" class="btn">Book now</a>
+           </div>
+           </div>
+          </div>  
+
+          <!-- Convertible -->
+        <div class="header_image">
+          <div class="car-card">
+            <div class="header_content">
+              <img src="assets/car-3.png" alt="Convertible Car">
+              <h3>Convertible</h3>
+              <p><span class="info">People:</span> 4 &nbsp; <span class="info"></span><i class="ri-group-line"></i></p>
+                <p><span class="info">5.3km /</span> 1-litre &nbsp; <span class="info"><i class="ri-speed-up-line"></i></p>
+                <p><span class="info">Gasoline</span> &nbsp; <span class="info"></span><i class="ri-flashlight-line"></i></p>
+                <p><span class="info">Automatic</span> &nbsp; <span class="info"></span><i class="ri-cpu-line"></i></p>
+              <p>Convertible cars offer a stylish ride for vacations and road trips, providing an open-air experience and fun.</p>
+              <a href="#" class="btn">Book now</a>
+           </div>
+         </div>
+        </div> 
+
+          <!-- SUV -->
+        <div class="header_image">  
+          <div class="car-card">
+            <div class="header_content">
+              <img src="assets/car-4.png" alt="SUV">
+              <h3>SUV</h3>
+              <p><span class="info">People:</span> 4 &nbsp; <span class="info"></span><i class="ri-group-line"></i></p>
+                <p><span class="info">5.3km /</span> 1-litre &nbsp; <span class="info"><i class="ri-speed-up-line"></i></p>
+                <p><span class="info">Gasoline</span> &nbsp; <span class="info"><i class="ri-flashlight-line"></i></p>
+                <p><span class="info">Automatic</span> &nbsp; <span class="info"></span><i class="ri-cpu-line"></i></p>
+              <p>SUVs are great for family trips, offering safety and comfort for long drives. Ideal for national park visits or camping.</p>
+              <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+       </div> 
+
+          <!-- Van/Minivan -->
+          <div class="header_image">
+          <div class="car-card">
+            <div class="header_content">
+              <img src="assets/car-5.png" alt="Van/Minivan">
+              <h3>Van/Minivan</h3>
+              <p><span class="info">People:</span> 7/8 &nbsp; <span class="info"></span><i class="ri-group-line"></i></p>
+                <p><span class="info">5.3km /</span> 1-litre &nbsp; <span class="info"><i class="ri-speed-up-line"></i></p>
+                <p><span class="info">Gasoline</span> &nbsp; <span class="info"><i class="ri-flashlight-line"></i></i></p>
+                <p><span class="info">Automatic</span> &nbsp; <span class="info"></span><i class="ri-cpu-line"></i></p>
+              <p>Vans and minivans are perfect for large groups or families, offering plenty of space for passengers and luggage.</p>
+              <a href="#" class="btn">Book now</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+        <div class="container" id="Reviews">
+          <div class="container__left">
+            <div class="header_content">
+            <h1>Read what our customers love about us</h1>
+            <p>
+              Over 300 satisfied customers have trusted us to meet their rental car needs. From budget cars to luxury vehicles, we have you covered!
+            </p>
+           </div>
+          </div>
+          <div class="container__right">
+            <div class="card">
+              <img src="assets/c1.png" alt="user" />
+              <div class="card__content">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <div class="card__details">
+                  <div class="header_content">
+                  <p>
+                    "Excellent service and great car selection. I had a smooth rental experience!"
+                  </p>
+                  <h4>- John Doe</h4>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/c3.png" alt="user" />
+              <div class="card__content">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <div class="card__details">
+                  <div class="header_content">
+                  <p>
+                    "Affordable rates and friendly staff. Highly recommended for your rental needs!"
+                  </p>
+                  <h4>- Sarah Smith</h4>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/c2.png" alt="user" />
+              <div class="card__content">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <div class="card__details">
+                  <div class="header_content">
+                  <p>
+                    "The luxury car I rented was amazing. I'll definitely rent from here again!"<
+                  </p>
+                  <h4>- Mike Johnson</h4>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <footer>
+          <div class="section_container footer_container">
+            <div class="footer_col">
+              <h4>Our Products</h4>
+              <ul class="footer_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="footer_col">
+              <h4>About Us</h4>
+              <ul class="footer_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="footer_col">
+              <h4>Resources</h4>
+              <ul class="footer_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="footer_col">
+              <h4>Extras</h4>
+              <ul class="footer_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="section_container footer_bar">
+            <h7>"Your dependable partner for budget-friendly and trustworthy car rental services."</h7> 
+             <h7>"We're here to fulfill all your travel needs, no matter where your journey takes you."</h7>
+            <h3>DriveSmart Rentals</h3>
+            <p>Copyright © 2024. All rights reserved.</p>
+            <ul class="footer_socials">
+              <li>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-google-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
